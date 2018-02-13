@@ -1,6 +1,6 @@
 # Simple Characters Counter
 
-How many characters have your text? This is a simple tool to let you know it. See live [here](http://www.ronaldoarg.github.io/characters-counter).
+How many characters have your text? This is a simple tool to let you know it. See live [here](ronaldoarg.github.io/characters-counter).
 
 ![Demo](https://github.com/ronaldoarg/characters-counter/raw/master/assets/images/demo.png "Demo")
 
