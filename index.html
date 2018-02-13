@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- WEB Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|PT+Sans" rel="stylesheet">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<title>A Simple Characters Counter</title>
+</head>
+<body>
+	<main class="main">    
+		<h1 class="title">A Simple Characters Counter</h1>
+		<section class="section">
+			<textarea class="input" name="text" data-dom="text" cols="30" rows="10" placeholder="Input your text here..."></textarea>
+		</section>
+		<section class="section section--results" data-dom="results">
+			<div class="result result1">
+				<span class="number" data-dom="counter">0</span> 
+				<p class="text">Characters</p>
+			</div>
+			<div class="result result2">
+				<span class="number" data-dom="counterWithoutSpace">0</span>
+				<p class="text">Characters without spaces</p>
+				
+			</div>
+			<div class="result result3">
+				<span class="number" data-dom="counterSpace">0</span>
+				<p class="text">Spaces</p>
+				
+			</div>
+			<div class="result result4">
+				<span class="number" data-dom="counterLines">1</span>
+				<p class="text">Lines</p>
+			</div>
+			<div class="result result--full">
+				Word <input type="text" data-dom="specificWord"> appear <span data-dom="counterSpecificWord">0</span> times in text.
+			</div>
+		</section>
+	</main>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

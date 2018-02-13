@@ -1,0 +1,122 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important; }
+
+.main {
+  background: #606C88;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #3F4C6B, #606C88);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #3F4C6B, #606C88);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  width: 100vw; }
+
+.title {
+  color: #FFFFFF;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+  padding: 50px;
+  text-align: center; }
+
+.section {
+  background: #FFFFFF;
+  font-family: 'PT Sans', sans-serif;
+  padding: 30px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 680px;
+  width: 100%;
+  z-index: 2000; }
+  .section--results {
+    background: #C5C5C5;
+    display: none;
+    grid-template: 'result1 result2 result3 result4' 'result5 result5 result5 result5';
+    z-index: 1000; }
+
+.input {
+  width: 100%;
+  height: 100px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem; }
+
+.result1 {
+  grid-area: result1; }
+
+.result2 {
+  grid-area: result2; }
+
+.result3 {
+  grid-area: result3; }
+
+.result4 {
+  grid-area: result4; }
+
+.result {
+  text-align: center; }
+  .result .number {
+    font-size: 2rem; }
+  .result--full {
+    grid-area: result5;
+    padding: 30px 0 0 0; }
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible; }
+  to {
+    transform: translate3d(0, 0, 0); } }
+
+.slideInDown {
+  display: grid;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: slideInDown; }
