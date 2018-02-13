@@ -4,9 +4,6 @@ How many characters have your text? This is a simple tool to let you know it. Se
 
 ![Demo](https://github.com/ronaldoarg/characters-counter/raw/master/assets/images/demo.png "Demo")
 
-
-imagem
-
 ## Features
 
 - Show how many characters text have
